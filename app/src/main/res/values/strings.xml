@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">FirestoreCru</string>
+
+    <string name="name">Enter Your Name</string>
+    <string name="address">Enter Your Address</string>
+    <string name="phone">Enter Your Mobile Number</string>
+    <string name="dob">Enter Your Date Of Birth</string>
+    <string name="email">Enter Your Email</string>
+
+    <string name="semail">Your Email</string>
+    <string name="sname">Your Name</string>
+    <string name="sadrs">Your Address</string>
+    <string name="sdob">Your DateOfBirth</string>
+    <string name="sphone">Your Mobile Number</string>
+</resources>
