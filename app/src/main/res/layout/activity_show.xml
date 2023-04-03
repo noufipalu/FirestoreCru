@@ -9,72 +9,27 @@
     tools:context=".ShowActivity">
 
     <TextView
-        android:id="@+id/txt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="Student Details"
+        android:id="@+id/head"
+        android:text="Registered Users"
         android:textColor="@color/text"
-        android:textSize="35dp"
+        android:textSize="28dp"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Title"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/txt_name"
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="45dp"
-        android:ems="10"
-        android:hint="@string/sname"
-        android:textSize="20dp"/>
+        android:layout_height="wrap_content"/>
 
-    <TextView
-        android:id="@+id/txt_address"
+    <ListView
+        android:id="@+id/list"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:textSize="20dp"
-        android:hint="@string/sadrs"
-        android:layout_marginTop="15dp"
-        android:gravity="start|top"/>
-
-    <TextView
-        android:id="@+id/txt_dob"
-        android:hint="@string/sdob"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:textSize="20dp"
-        android:layout_marginTop="15dp" />
-
-    <TextView
-        android:id="@+id/txt_phone"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/sphone"
-        android:textSize="20dp"
-        android:layout_marginTop="15dp" />
-
-    <TextView
-        android:id="@+id/txt_email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:textSize="20dp"
-        android:hint="@string/semail"
-        android:layout_marginTop="15dp" />
+        android:layout_height="590dp" />
 
     <Button
         android:id="@+id/btn_back"
         android:textSize="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="GO BACK" />
+        android:text="GO BACK"/>
 
 </LinearLayout>

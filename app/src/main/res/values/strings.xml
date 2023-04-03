@@ -12,4 +12,7 @@
     <string name="sadrs">Your Address</string>
     <string name="sdob">Your DateOfBirth</string>
     <string name="sphone">Your Mobile Number</string>
+
+    <string name="nametbc">Enter Name</string>
+    <string name="previousname">Enter Previous Name</string>
 </resources>

@@ -56,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 createUser();
+                clearFields();
             }
         });
         
@@ -69,22 +70,24 @@ public class MainActivity extends AppCompatActivity {
         update.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                updateUser();
+                startActivity(new Intent(MainActivity.this, UpdateActivity.class));
             }
         });
         
         delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                deleteUser();
+
             }
         });
     }
 
-    private void deleteUser() {
-    }
-
-    private void updateUser() {
+    private void clearFields() {
+        name.getText().clear();
+        adrs.getText().clear();
+        phone.getText().clear();
+        email.getText().clear();
+        dob.getText().clear();
     }
 
     private void createUser() {
