@@ -15,6 +15,8 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QuerySnapshot;
@@ -28,11 +30,13 @@ public class UpdateActivity extends AppCompatActivity {
     TextView goback;
     Button update;
     FirebaseFirestore firestore;
+    FirebaseAuth auth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update);
+
 
         name = findViewById(R.id.nametbc);
         firstname = findViewById(R.id.firstname);
@@ -90,5 +94,15 @@ public class UpdateActivity extends AppCompatActivity {
                         }
                     }
                 });
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        FirebaseUser user = auth.getCurrentUser();
+        if (user == null){
+            Toast.makeText(this, "Register as a new user", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(UpdateActivity.this, MainActivity.class));
+        }
     }
 }
